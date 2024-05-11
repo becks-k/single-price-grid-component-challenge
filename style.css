@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+/* any box that comes before or after inherits root box style */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+h2, h3, h4, p {
+    margin: 0;
+}
+
+.card {
+    width: 700px;
+    height: 500px;
+    text-align: left;
+    /* horizontal, vertical, blur, spread */
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.18);
+    border-radius: 10px;
+    /* takes child containers and hides excess */
+    overflow: hidden;
+    margin: auto;
+    margin-top: 100px;
+    
+    
+}
+
+
+
+.top-section {
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    padding: 20px;
+    
+    
+
+}
+
+.bottom-section {
+    width: 100%;
+    height: 60%;
+    color: white;
+    display: flex;
+    
+    
+    
+    
+
+}
+
+.bottom-left-section {
+    background-color: #034159;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    
+    
+}
+
+.bottom-right-section {
+    background-color: #7EBFBF;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    
+    
+    
+}
+
+button {
+    width: 200px;
+    background-color: rgb(179, 227, 106);
+    color: white;
+    border: none;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.18);
+    border-radius: 5px;
+    
+
+}
+
+button:hover {
+    cursor: pointer;
+    /* makes button bigger on hoover */
+    transform: scale(1.05);
+}
+
+.top-section h2 {
+    color: #034159;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.top-section h4 {
+    color: rgb(179, 227, 106);
+    margin-bottom: 15px;
+}
+
+.top-section p {
+    color: lightslategrey;
+}
+
+.bottom-left-section h3 {
+    margin-bottom: 20px;
+}
+
+.money {
+    font-size: 3em;
+}
+
+.bottom-left-section p {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 0.8em;
+}
+
+.bottom-right-section ul {
+    margin-top: 20px;
+    font-size: 0.9em;
+    /* removes built in padding for lists */
+    padding: 0;
+    /* removes bullet points */
+    list-style: none;
+    opacity: 0.8;
+    
+}
