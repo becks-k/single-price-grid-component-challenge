@@ -14,8 +14,8 @@ h2, h3, h4, p {
 }
 
 .card {
-    width: 700px;
-    height: 500px;
+    width: 550px;
+    height: 450px;
     text-align: left;
     /* horizontal, vertical, blur, spread */
     box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.18);
@@ -24,8 +24,6 @@ h2, h3, h4, p {
     overflow: hidden;
     margin: auto;
     margin-top: 100px;
-    
-    
 }
 
 
@@ -35,9 +33,21 @@ h2, h3, h4, p {
     height: 40%;
     background-color: white;
     padding: 20px;
-    
-    
+}
 
+.top-section h2 {
+    color: #034159;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.top-section h4 {
+    color: rgb(179, 227, 106);
+    margin-bottom: 15px;
+}
+
+.top-section p {
+    color: lightslategrey;
 }
 
 .bottom-section {
@@ -45,11 +55,6 @@ h2, h3, h4, p {
     height: 60%;
     color: white;
     display: flex;
-    
-    
-    
-    
-
 }
 
 .bottom-left-section {
@@ -57,8 +62,20 @@ h2, h3, h4, p {
     width: 50%;
     height: 100%;
     padding: 20px;
-    
-    
+}
+
+.bottom-left-section h3 {
+    margin-bottom: 20px;
+}
+
+.money {
+    font-size: 3em;
+}
+
+.bottom-left-section p {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 0.8em;
 }
 
 .bottom-right-section {
@@ -66,9 +83,16 @@ h2, h3, h4, p {
     width: 50%;
     height: 100%;
     padding: 20px;
-    
-    
-    
+}
+
+.bottom-right-section ul {
+    margin-top: 20px;
+    font-size: 0.9em;
+    /* removes built in padding for lists */
+    padding: 0;
+    /* removes bullet points */
+    list-style: none;
+    opacity: 0.8;
 }
 
 button {
@@ -89,42 +113,15 @@ button:hover {
     transform: scale(1.05);
 }
 
-.top-section h2 {
-    color: #034159;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
 
-.top-section h4 {
-    color: rgb(179, 227, 106);
-    margin-bottom: 15px;
-}
+@media (max-width: 576px) {
+    .card, .bottom-left-section, .bottom-right-section {
+        width: 100%;
+        height: auto;
+    }
 
-.top-section p {
-    color: lightslategrey;
-}
+    .bottom-section {
+        flex-direction: column;
+    }
 
-.bottom-left-section h3 {
-    margin-bottom: 20px;
-}
-
-.money {
-    font-size: 3em;
-}
-
-.bottom-left-section p {
-    margin-top: 15px;
-    margin-bottom: 40px;
-    font-size: 0.8em;
-}
-
-.bottom-right-section ul {
-    margin-top: 20px;
-    font-size: 0.9em;
-    /* removes built in padding for lists */
-    padding: 0;
-    /* removes bullet points */
-    list-style: none;
-    opacity: 0.8;
-    
 }
